@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="#0E1113"/>
+  
+  <defs>
+    <!-- Warm sunset/dusk gradient -->
+    <linearGradient id="sunGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F3C982" />
+      <stop offset="50%" stop-color="#D9915F" />
+      <stop offset="100%" stop-color="#72505B" />
+    </linearGradient>
+    
+    <!-- Soft glow/aura around the sun -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Glowing Sun / Light Orb (Sinking) -->
+  <path d="M 292,512 A 220,220 0 0,1 732,512 Z" fill="url(#sunGradient)" filter="url(#glow)" />
+  
+  <!-- Minimal Horizon Line -->
+  <line x1="240" y1="528" x2="784" y2="528" stroke="#9EA5A4" stroke-width="6" stroke-linecap="round" opacity="0.15" />
+</svg>

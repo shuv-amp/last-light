@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Last Light",
+    "slug": "last-light",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "np.com.shuvamp.lastlight",
+      "adaptiveIcon": {
+        "backgroundColor": "#0E1113",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sharing"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "03382d07-ff5e-4450-a26f-1b1b2c29abbc"
+      }
+    },
+    "owner": "fdfdjfidsjfi"
+  }
+}
